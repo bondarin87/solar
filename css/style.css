@@ -1,0 +1,143 @@
+body {
+    background: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*flex-grow, flex-shrink, flex-basis*/
+html, body {
+    height: 100%;
+    color: blue;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+.logo__header {
+        height: 40px;
+        width: 40px;
+        background: blue;
+        border-radius: 50%;
+        margin-left: 10px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    margin-right: 10px;
+}
+ul>li {
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 20px;
+    transition-duration: 2s;
+    transition-property: all;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid blue;
+
+}
+li>a {
+    
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: all;
+
+    
+}
+a:hover {
+    color: burlywood ; 
+}
+li:hover {
+
+background: blue;
+}
+.header {
+
+    height: 70px;
+    border: 1px solid blue;
+}
+.section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes anim {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+@keyframes anim1 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.sol {
+ width: 100px;
+ height: 100px;
+ background: radial-gradient(orange 20px, yellow 60px);
+ border-radius: 50%;
+ margin: 40px;
+}
+.tierra {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 1px solid blue;
+    background:radial-gradient(at 30px 50px,white, blue);
+    border-radius: 50%;
+    margin: 4px;
+}
+.mercurio {
+    width: 15px;
+    height: 15px;
+    background:radial-gradient(at 1px 10px,white, rgb(165, 108, 3));
+    border-radius: 50%;
+    transform-origin: -86px -5px;
+    animation: anim 10s infinite;
+
+}
+.luna {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid gray;
+    background:radial-gradient(at 5px 10px,white,gray);
+    border-radius: 50%;
+    transform-origin: 37px 30px ;
+    animation: anim1 5s infinite;
+}
+.wrap__tierra {
+    position: relative;
+    transform-origin: -86px -5px;
+    animation: anim 20s infinite;
+    
+}
+.footer {
+    height: 70px;
+    border: 1px solid blue;
+}
+.prf{
+   position: relative;
+   bottom: -30px;
+   text-align: center;
+   
+   
+   font-size: 14px;
+
+
+
+}
