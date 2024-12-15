@@ -34,7 +34,7 @@ ul {
 ul>li {
     display: inline;
     padding: 5px 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     transition-duration: 2s;
     transition-property: all;
     text-align: center;
